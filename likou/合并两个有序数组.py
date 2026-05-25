@@ -5,3 +5,16 @@
 
 注意：最终，合并后数组不应由函数返回，而是存储在数组 nums1 中。为了应对这种情况，nums1 的初始长度为 m + n，其中前 m 个元素表示应合并的元素，后 n 个元素为 0 ，应忽略。nums2 的长度为 n 。
 """
+nums1 = [3, 6, 8]
+nums2 = [6, 2, 10]
+
+# 方法1
+nums1.extend(nums2)
+nums1.sort()
+print(nums1)
+
+# 逆序排序
+nums1.sort(reverse=True)
+# i是nums1的元素值
+for i in nums1:
+    print(i)
