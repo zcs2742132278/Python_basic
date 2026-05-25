@@ -1,0 +1,17 @@
+是否安装cc
+npm list -g @anthropic-ai/claude-code
+
+安装cc
+npm install -g @anthropic-ai/claude-code
+
+npm config get prefix，得到了路径 C:\Users\admin\AppData\Roaming\npm
+
+
+$env:ANTHROPIC_BASE_URL = "https://api.deepseek.com/anthropic"
+$env:ANTHROPIC_AUTH_TOKEN = "sk-f0d8ae3a2d2e48f1953c4a29ef3a1464"
+$env:ANTHROPIC_MODEL = "deepseek-v4-pro[1m]"
+$env:ANTHROPIC_DEFAULT_OPUS_MODEL = "deepseek-v4-pro[1m]"
+$env:ANTHROPIC_DEFAULT_SONNET_MODEL = "deepseek-v4-pro[1m]"
+$env:ANTHROPIC_DEFAULT_HAIKU_MODEL = "deepseek-v4-flash"
+$env:CLAUDE_CODE_SUBAGENT_MODEL = "deepseek-v4-flash"
+$env:CLAUDE_CODE_EFFORT_LEVEL = "max"
