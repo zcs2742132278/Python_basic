@@ -1,0 +1,12 @@
+一、
+    AI智能助手:Assistants API人工智能助手的API
+        支持三种类型工具:
+            1.代码解释器 Code Interpreter    最常用，有逻辑都可以用
+            2.检索 Retrieval
+            3.函数调用 Function calling
+
+        构建 Assistants API 的标准流程:
+            1.通过定义其自定义指令 并选择LLM来创建一个助手(Assistant)
+            2.当用户开始对话时，创建一个线程(Thread)
+            3.当用户开始对话时，向线程添加消息(Messages)
+            4.通过调用模型和工具在线程上运行助手以生成响应
