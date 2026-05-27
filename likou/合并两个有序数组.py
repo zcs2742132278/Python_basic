@@ -52,10 +52,11 @@ def merge(nums1, m, nums2, n):
 
 
 # 测试
-nums1 = [3, 6, 8, 0, 0, 0]
-m = 3
+nums1 = [3, 6, 8, 8, 9, 0, 0, 0]
+m = 5
 nums2 = [2, 10, 11]
 n = 3
+
 
 merge(nums1, m, nums2, n)
 print(nums1)  # [2, 3, 6, 6, 8, 10]
