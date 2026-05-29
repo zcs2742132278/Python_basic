@@ -50,10 +50,6 @@ def generate_script(prompt, role="你是一个专业配音脚本编剧", style="
         messages=[
             # system 消息：定义 AI 的角色和行为规范，类似"你是一个XX，请按XX方式回答"
             # 这段消息告诉模型它是配音编剧，以及输出的格式要求
-            {'role': 'system', 'content': f'{role}。要求配音风格: {style}。'
-                                          # 以下是指令：不要括号、角色名等，只要纯净的配音文本
-                                          '直接输出配音文稿，不需要舞台指示或角色标注，只输出纯对白文本。'
-                                          '分段用空行隔开，方便逐段配音。'},
             # user 消息：你具体想要什么
             {'role': 'user', 'content': prompt}
         ],

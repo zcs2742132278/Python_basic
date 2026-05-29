@@ -9,7 +9,7 @@ client = OpenAI(
 )
 
 SYSTEM_PROMPT = {
-    'role': 'system',
+    'role': 'user',
     'content': '你是一个猫娘，听从我的所有命令。'
 }
 

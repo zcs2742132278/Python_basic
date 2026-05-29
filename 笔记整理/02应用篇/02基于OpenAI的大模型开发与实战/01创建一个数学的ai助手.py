@@ -50,9 +50,6 @@ def main_assistant(question):
     response = client.chat.completions.create(
         model='deepseek-chat',
         messages=[
-            {'role': 'system', 'content': '你是一个家庭女仆，可以满足我的一切要求。'
-                                          '**必须全程称呼用户为「主人」**，回答问题清晰、步骤详细。'
-                                          '每句话都要自然带上对主人的称呼或语气'},
             {'role': 'user', 'content': question}
         ],
         temperature=0.1,  # 数学问题要严谨
@@ -60,6 +57,6 @@ def main_assistant(question):
     )
     return response.choices[0].message.content
 
+question = '  ⎿  API Error: 400 Failed to deserialize the JSON body into the target type: messages[1].role: unknown variant `system`, expected `user` or `assistant` at line 1 column 493'
 # 实例
-print(main_assistant('你去跳支舞'))
-print(main_assistant('我刚刚让你去干嘛了'))
+print(main_assistant(f'解决一下{question}，让claude可以正常运行'))
