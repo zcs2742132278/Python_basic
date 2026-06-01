@@ -1,0 +1,19 @@
+张量
+    数据的数组、矩阵、容器
+
+数据类型
+    32位浮点数:torch.float32
+    64位浮点数:torch.float64
+    16位整数:torch.int16
+    32位整数:torch.int32
+    64位整数:torch.int64
+
+
+tensorflow 不能直接用tensor方法创建tensor
+tensorflow 提供了constant，Variable
+keras：deeplearning for human
+
+
+张量运算
+    tensor运算规则和numpy的ndarray 很像
+    和单个数字运算

@@ -2,7 +2,7 @@ from openai import OpenAI
 
 
 client = OpenAI(
-    api_key="sk-f0d8ae3a2d2e48f1953c4a29ef3a1464",
+    api_key="sk-a5c7c62acc864157b5ab8201f5b5ca92",
     base_url="https://api.deepseek.com"  # 改成 DeepSeek 官方地址
 )
 
@@ -57,6 +57,6 @@ def main_assistant(question):
     )
     return response.choices[0].message.content
 
-question = '  ⎿  API Error: 400 Failed to deserialize the JSON body into the target type: messages[1].role: unknown variant `system`, expected `user` or `assistant` at line 1 column 493'
+question = ''
 # 实例
 print(main_assistant(f'解决一下{question}，让claude可以正常运行'))
